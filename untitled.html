@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Documentation Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>CSS Documentation</header>
+      <ul>
+        <li><a class="nav-link" href="#what_is_css?">What is CSS?</a></li>
+        <li><a class="nav-link" href="#introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#css_selectors">CSS Selectors</a></li>
+        <li><a class="nav-link" href="#css_properties">CSS Properties</a></li>
+        <li><a class="nav-link" href="#css_units">CSS Units</a></li>
+        <li><a class="nav-link" href="#css_layouts">CSS Layouts</a></li>
+        <li><a class="nav-link" href="#css_frameworks">CSS Frameworks</a></li>
+        <li><a class="nav-link" href="#conclusion">Conclusion</a></li>
+        <li><a class="nav-link" href="#reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="what_is_css?">
+        <header>What is CSS?</header>
+        <p>CSS (Cascading Style Sheets) is a style sheet language used to describe the look and formatting of a document written in markup language such as HTML. It is used to define styles, layout, and positioning of HTML elements on a web page.</p>
+        <p>CSS is based on the concept of cascading, which means that multiple styles can be applied to the same element, and the most specific style takes precedence over the others. This allows for a lot of flexibility in styling web pages.</p>
+      </section>
+      <section class="main-section" id="introduction">
+        <header>Introduction</header>
+        <p>CSS uses a simple syntax that consists of a selector and a declaration block. The selector is used to specify the HTML element that you want to style, and the declaration block contains one or more properties that define the style of the selected element.</p>
+        <p>Here is an example of the syntax</p>
+        <code id="code">
+          selector {
+          property: value;
+          }
+        </code>
+          <p>In this example, <span id="bold">selector</span> is the HTML element you want to style, <span id="bold">property</span> is the CSS property you want to set, and <span id="bold">value</span> is the value you want to assign to that property. Multiple properties can be included in a declaration block separated by a semicolon.</p>
+      </section>
+      <section class="main-section" id="css_selectors">
+        <header>CSS Selectors</header>
+        <p>CSS selectors are used to select and style specific HTML elements. There are several types of selectors, including:</p>
+        <ul>
+          <li><span id="bold">Type selector:</span> Selects all elements of a given type, such as <span id="bold">`h1`, `p`, <span id="normal">or</span> `img`.</span></li>
+          <li><span id="bold">Class selector:</span> Selects all elements with a given class name, using the . followed by the class name, such as <span id="bold">`.my-class`</span>.</li>
+          <li><span id="bold">ID selector:</span> Selects a single element with a given ID, using the # followed by the ID name, such as <span id="bold">`#my-id`</span>.</li>
+          <li><span id="bold">Descendant selector:</span> Selects all elements that are descendants of a given element, such as <span id="bold">`div p`</span>.</li>
+          <li><span id="bold">Child selector:</span> Selects all direct children of a given element, such as <span id="bold">`div > p`</span>.</li>
+          <li><span id="bold">Adjacent sibling selector:</span> Selects the next sibling of a given element, such as <span id="bold">`h1 + p`</span>.</li>
+          <li><span id="bold">General sibling selector:</span> Selects all siblings of a given element, such as <span id="bold">`h1 ~ p`</span>.</li>
+          <li><span id="bold">Attribute selector:</span> Selects elements based on their attributes, such as <span id="bold">`a[href="https://www.google.com"]`</span>.
+</li>
+        </ul>
+      </section>
+      <section class="main-section" id="css_properties">
+        <header>CSS Properties</header>
+        <p>CSS properties are used to set the style of HTML elements. There are hundreds of properties available in CSS, but some of the most commonly used properties include:</p>
+        <h1>Box Model</h1>
+        <p>Here's an example of how to set the padding, border, and margin of an element:</p>
+        <code id="code">
+          .my-class {
+  padding: 10px;
+  border: 1px solid black;
+  margin: 20px;
+}
+
+        </code>
+        <ul>
+          <li><span id="bold">Width/Height:</span> Sets the width and height of an element.</li>
+          <li><span id="bold">Padding:</span> Sets the padding area around the content inside an element.</li>
+          <li><span id="bold">Margin:</span> Sets the margin area around an element.</li>
+          <li><span id="bold">Border:</span> Sets the border around an element.</li>
+        </ul>
+        <h1>Texts and Fonts</h1>
+        <ul>
+          <li><span id="bold">Color:</span> Sets the color of text or background.</li>
+          <li><span id="bold">Fonts:</span> Sets the font family, size, weight, and style.</li>
+          <li><span id="bold">Text-align:</span> Sets the horizontal alignment of text.</li>
+          <li><span id="bold">Line-height:</span>  Sets the height of a line of text.</li>
+          <li><span id="bold">Text-decoration:</span> Sets decorations such as underline, overline, and line-through.</li>
+          <li><span id="bold">Text-transform:</span> Sets the capitalization of text.</li>
+          <li><span id="bold">Letter-spacing:</span>  Sets the spacing between letters.</li>
+          <li><span id="bold">Word-Spacing:</span> Sets the spacing between words.</li>
+        </ul>
+        <h1>Display and Positioning</h1>
+        <ul>
+          <li><span id="bold">Display:</span> Sets how an element is displayed on the page.</li>
+          <li><span id="bold">Position:</span> Sets the positioning of an element.</li>
+          <code id="bold">
+            .my-class {
+  position: static;
+}
+
+          </code>
+          <li><span id="bold">Z-index:</span> Sets the stacking order of elements.</li>
+          <li><span id="bold">Overflow:</span> Sets what happens when content overflows an element.</li>
+          <li><span id="bold">Visibility:</span>  Sets the visibility of an element.</li>
+        </ul>
+        <h1>Background and Images</h1>
+        <ul>
+          <li><span id="bold">Background-color:</span> Sets the background color of an element.</li>
+          <li><span id="bold">Background-image:</span> Sets the background image of an element.</li>
+          <li><span id="bold">Background-repeat:</span> Sets how a background image is repeated.</li>
+          <li><span id="bold">Background-position:</span> Sets the position of a background image.</li>
+          <li><span id="bold">Background-size:</span> Sets the size of a background image.</li>
+        </ul>
+        <h1>Transitions and Animations</h1>
+        <ul>
+          <li><span id="bold">Transition:</span>  Sets the transition effect between two states of an element.</li>
+          <p>Here's an example of how to create a transition on a hover effect:</p>
+          <code id="code">
+            button {
+  background-color: blue;
+  transition: background-color 0.5s ease;
+}
+
+button:hover {
+  background-color: red;
+}
+
+          </code>
+          <li><span id="bold">Animation:</span> Sets the animation effect of an element.</li>
+          <p>Here's an example of how to create an animation on a loading spinner:</p>
+          <code id="code">
+            .spinner {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #ccc;
+  border-top-color: #333;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+          </code>
+      </section>
+      <section class="main-section" id="css_units">
+        <header>CSS Units</header>
+        <p>CSS uses different units to define measurements for various properties such as size, spacing, and positioning. Some of the most commonly used units include:</p>
+        <ul>
+          <li><span id="bold">Pixel(px):</span> A pixel is a unit of measurement that is used to define the size and position of elements on a web page. One pixel is equal to one dot on the screen.</li>
+          <li><span id="bold">Percentage(%):</span> A percentage is a unit of measurement that is used to define the size and position of elements relative to the size of their containing element.</li>
+          <li><span id="bold">EMs(em):</span> An em is a unit of measurement that is based on the size of the font being used. One em is equal to the font size of the element.</li>
+          <li><span id="bold">REM(rem):</span> A rem is a unit of measurement that is based on the font size of the root element. This is useful for creating consistent layouts across different devices and screen sizes.</li>
+          <li><span id="bold">Viewport(vh,vw):</span> Viewport units are relative to the size of the browser window. One viewport height (vh) is equal to 1% of the height of the browser window, and one viewport width (vw) is equal to 1% of the width of the browser window.</li>
+        </ul>
+      </section>
+      <section class="main-section" id="css_layouts">
+        <header>CSS Layouts</header>
+        <p>CSS layouts are used to arrange HTML elements on a web page. There are several types of layouts, including:</p>
+        <h1></h1>
+        <ul>
+          <li><span id="bold">Fixed layout:</span> The elements on the page have fixed positions and do not move even if the browser window is resized.</li>
+          <li><span id="bold">Fluid layout:</span> The elements on the page adjust their positions and sizes according to the size of the browser window.</li>
+          <li><span id="bold">Responsive layout:</span> The layout adjusts to different screen sizes and orientations, using media queries to adjust styles and layouts for different devices.</li>
+          <li><span id="bold">Grid layout:</span> The layout is based on a grid system, allowing for precise positioning and alignment of elements.</li>
+          <li><span id="bold">Flexbox layout:</span> The layout is based on a flexible box system, allowing for flexible and dynamic layouts that adapt to different screen sizes and orientations.
+</li>
+        </ul>
+      </section>
+      <section class="main-section" id="css_frameworks">
+        <header>CSS Frameworks</header>
+        <p>CSS frameworks are pre-built sets of CSS styles and components that can be used to create consistent and responsive layouts quickly and easily. Some popular CSS frameworks include Bootstrap, Foundation, and Bulma.</p>
+        <ul>
+          <li><h2>Bootstrap</h2></li>
+          <p>Bootstrap is known for popularizing the focus on responsive design among web developers. It promoted the now-ubiquitous concept of mobile-first and provided the right tools for its easy implementation. It did so by introducing a grid – partitioning the screen into columns (invisible to the end user’s eye).</p>
+
+<p>With Bootstrap, developers don’t have to build separate projects around adjusting a site for smaller screen sizes. They just need to incorporate the necessary Bootstrap classes, and the design adjusts itself.</p>
+<li><h2>Tailwind CSS</h2></li><p>Tailwind CSS’s official documentation describes it as a “utility-first CSS framework” that comes with classes equipped to build custom UI designs directly in the users’ markup. It is handy to implement inline styling to rustle up a stunning UI without writing any CSS.</p>
+
+<p>One of the most popular utility CSS libraries in existence, Tailwind CSS offers significant benefits for web design. Interestingly, it took Adam Wathan (the creator of Tailwind) to convince the world why utility-based CSS trumps semantic CSS. But eventually, enough developers believed him enough to start using Tailwind, and now it is used frequently enough to be on lists like this.</p>
+<li><h2>Foundation</h2></li><p>Foundation calls itself “The most advanced responsive front-end framework in the world.” This responsive front-end framework provides a grid, HTML, SASS, and CSS UI elements, templates, and code that covers navigation, buttons, typography, forms, etc. It also comprises optional functionalities offered by JavaScript extensions.</p>
+
+<p>Formerly managed by ZURB, Foundation is an open-source project that volunteers have run since 2019. It also operates with a mobile-first approach and is particularly useful for building large web apps requiring a design host.</p>
+<li><h2>Bulma</h2></li><p>Bulma is an open-source, responsive CSS framework based on Flexbox. It comes with an impressive range of built-in features that facilitate faster turnaround and minimal CSS coding by hand. It implements tiles to create Metro-style grids, resulting in smooth page layouts. Additionally, users can import only the elements they will use, simplifying the process even further.</p>
+
+<p>Given that Bulma’s source code is free for download, users can extend its functionality as they see fit. It provides a no-nonsense, CSS-only methodology (no JavaScript components) and visually appealing defaults to get started with.</p>
+
+<p>Bulma has been highly adopted within the Laravel community, which has helped with its increasing popularity.</p>
+<li><h2>Skeleton</h2></li><p>Skeleton doesn’t even call itself a framework but rather a “dead simple, responsive boilerplate.” Its minimalism is beyond question: it has only 400 lines of source code!</p>
+
+<p>This lightweight tool is built to create CSS elements compatible with both larger screens and mobile devices. It contains all standard components for responsive design and splits the page into multiple 12-column grids with a maximum width of 960px – something that fits small, medium, and large screens. Of course, if required, the max-width can be changed with a single line of CSS code. The syntax is quick to implement, simple, and makes putting together responsive design a relatively effortless task.</p>
+        </ul>
+      </section>
+      <section class="main-section" id="conclusion">
+        <header>Conclusion</header>
+        <p>CSS is a powerful tool for styling and formatting HTML documents. With a solid understanding of CSS syntax, selectors, properties, units, and layouts, you can create beautiful and responsive web pages that look great on any device.</p>
+      </section>
+      <section class="main-section" id="reference">
+        <header>Reference</header>
+        <ul>
+          <li>All the documentation in this page is taken from <a href="https://developer.mozilla.org/en-US/docs/Web/CSS">here</a></li>
+        <ul>
+      </section>
+    </main>
+  </body>
+</html>
